@@ -1,7 +1,7 @@
-import math
-import random
+from math import *
 
-access_count = 0
+from array_generator import *
+from measure import *
 
 
 def sort(arr):
@@ -21,38 +21,27 @@ def sort(arr):
 
 
 def get_item(arr, index):
-    increment_access_counter()
+    operation_measure.increment()
     return arr[index]
 
 
 def append_to_tail(arr, item):
-    increment_access_counter()
+    operation_measure.increment()
     arr.append(item)
-
-
-def increment_access_counter():
-    global access_count
-    access_count += 1
 
 
 def get_base(arr):
     return get_item(arr, 0)
 
 
-def generate_array(length):
-    arr = []
-    for q in range(0, length):
-        arr.append(random.randrange(1, length * 2))
-    return arr
-
-
+operation_measure = CountMeasure()
 requested_length = int(input("Print array length:"))
 source = generate_array(requested_length)
 print("Source array: {}".format(source))
 ordered = sort(source)
 print("Ordered array ({} items): {}".format(len(ordered), ordered))
-print("Access count: {}".format(access_count))
+print("Access count: {}".format(operation_measure.get_count()))
 source_length = len(source)
-n_x_log_n = source_length * math.log2(source_length)
+n_x_log_n = source_length * log2(source_length)
 print("O(n*log(n)): {}".format(n_x_log_n))
 print("O(n*n): {}".format(source_length * source_length))
