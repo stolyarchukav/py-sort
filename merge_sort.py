@@ -32,6 +32,6 @@ class MergeSort:
                 else:
                     right_value = None
             merged.append(left_value)
-        for q in range(right_index, right_len):
-            merged.append(self.__get_item(right, q))
+        for index in range(right_index, right_len):
+            merged.append(self.__get_item(right, index))
         return merged
