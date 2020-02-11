@@ -1,4 +1,7 @@
-class MergeSort:
+from sort import *
+
+
+class MergeSort(Sort):
 
     def __init__(self, operation_measure):
         self.__operation_measure = operation_measure

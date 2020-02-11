@@ -1,4 +1,7 @@
-class QuickSort:
+from sort import *
+
+
+class QuickSort(Sort):
 
     def __init__(self, operation_measure):
         self.__operation_measure = operation_measure
@@ -25,4 +28,3 @@ class QuickSort:
 
     def __get_base(self, arr):
         return self.__get_item(arr, 0)
-
