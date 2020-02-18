@@ -1,7 +1,7 @@
 import unittest
 
-from measure import *
-from quick_sort import *
+from utils.measure import *
+from algorithms.quick_sort import *
 
 
 class QuickSortTest(unittest.TestCase):

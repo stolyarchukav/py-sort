@@ -1,12 +1,12 @@
 from datetime import *
 from math import log2
 
-from array_generator import *
-from measure import *
-from quick_sort import *
+from utils.array_generator import *
+from utils.measure import *
+from algorithms.merge_sort import *
 
 operation_measure = CountMeasure()
-sorter = QuickSort(operation_measure)
+sorter = MergeSort(operation_measure)
 requested_length = int(input("Print array length:"))
 source = generate_array(requested_length)
 print("Source array: {}".format(source))

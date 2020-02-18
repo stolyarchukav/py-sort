@@ -1,8 +1,8 @@
 from datetime import *
 
-from array_generator import *
-from insertion_sort import *
-from measure import *
+from utils.array_generator import *
+from algorithms.insertion_sort import *
+from utils.measure import *
 
 operation_measure = CountMeasure()
 sorter = InsertionSort(operation_measure)

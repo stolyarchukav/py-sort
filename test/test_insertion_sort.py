@@ -1,7 +1,7 @@
 import unittest
 
-from insertion_sort import *
-from measure import *
+from algorithms.insertion_sort import *
+from utils.measure import *
 
 
 class InsertionSortTest(unittest.TestCase):

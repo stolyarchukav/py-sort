@@ -1,4 +1,4 @@
-from sort import *
+from algorithms.sort import *
 
 
 class QuickSort(Sort):

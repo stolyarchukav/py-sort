@@ -1,7 +1,7 @@
 import unittest
 
-from measure import *
-from merge_sort import *
+from utils.measure import *
+from algorithms.merge_sort import *
 
 
 class MergeSortTest(unittest.TestCase):
