@@ -1,3 +1,5 @@
+from math import log2
+
 from algorithms.sort import *
 
 
@@ -31,3 +33,6 @@ class MergeSort(Sort):
         for index in range(right_index, right_len):
             merged.append(self._get_item(right, index))
         return merged
+
+    def complexity(self, n):
+        return "O(n * log(n)): " + str(n * log2(n))

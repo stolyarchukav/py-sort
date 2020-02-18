@@ -3,5 +3,13 @@
 2. Merge sort
 3. Quick sort
 
-#####Run tests:
+#####Usage
+~~~
+python run.py
+~~~
+The choose algorithm and the size of randomly generated array and get the result
+
+#####Run unit tests:
+~~~
 python -m unittest
+~~~

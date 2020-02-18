@@ -14,3 +14,5 @@ class InsertionSort(Sort):
                     arr[index_2] = item
         return arr
 
+    def complexity(self, n):
+        return "O(n * n): " + str(n * n)

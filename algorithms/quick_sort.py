@@ -1,3 +1,5 @@
+from math import log2
+
 from algorithms.sort import *
 
 
@@ -21,3 +23,6 @@ class QuickSort(Sort):
 
     def __get_base(self, arr):
         return self._get_item(arr, 0)
+
+    def complexity(self, n):
+        return "O(n * log(n)): " + str(n * log2(n))

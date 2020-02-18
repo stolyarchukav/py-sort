@@ -12,3 +12,7 @@ class Sort:
         """Return an item retrieved by an index from array. Includes measuring (increment access counter)"""
         self.__operation_measure.increment()
         return arr[index]
+
+    def complexity(self, n):
+        """Return expected complexity in O notation"""
+        pass
