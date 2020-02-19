@@ -1,5 +1,6 @@
 from datetime import *
 
+from algorithms.bubble_sort import *
 from algorithms.insertion_sort import *
 from algorithms.merge_sort import *
 from algorithms.quick_sort import *
@@ -9,7 +10,8 @@ from utils.measure import *
 algorithms = {
         1: InsertionSort,
         2: MergeSort,
-        3: QuickSort
+        3: QuickSort,
+        4: BubbleSort
     }
 
 
@@ -18,6 +20,7 @@ def get_algorithm():
       \t1 - insertion sort
       \t2 - merge sort
       \t3 - quick sort
+      \t4 - bubble sort
       :""")))
     if alg is None:
         raise Exception("Algorithm does not exist")
