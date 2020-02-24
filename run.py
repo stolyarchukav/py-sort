@@ -4,6 +4,7 @@ from algorithms.bubble_sort import *
 from algorithms.insertion_sort import *
 from algorithms.merge_sort import *
 from algorithms.quick_sort import *
+from algorithms.tim_sort import *
 from utils.array_generator import *
 from utils.measure import *
 
@@ -11,16 +12,18 @@ algorithms = {
         1: InsertionSort,
         2: MergeSort,
         3: QuickSort,
-        4: BubbleSort
+        4: BubbleSort,
+        5: TimSort
     }
 
 
 def get_algorithm():
     alg = algorithms.get(int(input("""Choose an algorithm: 
-      \t1 - insertion sort
-      \t2 - merge sort
-      \t3 - quick sort
-      \t4 - bubble sort
+      \t1 - Insertion sort
+      \t2 - Merge sort
+      \t3 - Quick sort
+      \t4 - Bubble sort
+      \t5 - Tim sort
       :""")))
     if alg is None:
         raise Exception("Algorithm does not exist")
